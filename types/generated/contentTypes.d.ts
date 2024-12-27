@@ -374,7 +374,7 @@ export interface ApiTodoTodo extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String & Attribute.Required & Attribute.Unique;
+    title: Attribute.String & Attribute.Required;
     completed: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;
